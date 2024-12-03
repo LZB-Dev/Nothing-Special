@@ -1,0 +1,43 @@
+{
+   "action": {
+      "default_icon": {
+         "19": "icons/19e.png",
+         "38": "icons/38e.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "__MSG_2509634311667449183__"
+   },
+   "author": {
+      "email": "google-translate-chrome-extension-owners@google.com"
+   },
+   "background": {
+      "service_worker": "main_compiled.js"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "bubble_gss.css" ],
+      "js": [ "bubble_compiled.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "default_locale": "en",
+   "description": "Modified extension for personal use.",
+   "differential_fingerprint": "1.674e538b108bb13b8b8eb9be7b74f7f6d3cc22ee1bb85c3ddcd9bf971a45dc02",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "19": "icons/19.png",
+      "32": "icons/32.png",
+      "38": "icons/38.png",
+      "48": "icons/48.png"
+   },
+   "manifest_version": 3,
+   "minimum_chrome_version": "115",
+   "name": "Google Translate (Modified)",
+   "options_page": "options.html",
+   "permissions": [ "activeTab", "contextMenus", "storage", "offscreen", "scripting" ],
+   "version": "2.0.16.1",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "popup_css_compiled.css" ]
+   } ]
+}
